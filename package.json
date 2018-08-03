@@ -1,0 +1,30 @@
+{
+  "name": "medaimane.github.io",
+  "version": "1.0.0",
+  "description": "skhairi mohamed aimane products presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medaimane/medaimane.github.io.git"
+  },
+  "keywords": [
+    "medaimane",
+    "products",
+    "skhairi",
+    "mohamed",
+    "aimane"
+  ],
+  "author": "skhairi mohamed aimane",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/medaimane/medaimane.github.io/issues"
+  },
+  "homepage": "https://github.com/medaimane/medaimane.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
