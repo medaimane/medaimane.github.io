@@ -1,3 +1,5 @@
+$(".dropdown-trigger").dropdown();
+
 (function($){
     $(function(){
 

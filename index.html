@@ -15,110 +15,135 @@
 </head>
 <body>
 
-  <div class="navbar-fixed">
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">medaimane</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Contact us</a></li>
-        </ul>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">medaimane</a>
+          <ul class="right hide-on-med-and-down">
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Social media</a></li>
+          </ul>
+  
+          <!-- Dropdown Structure -->
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a class="orange-text" href="https://www.linkedin.com/in/skhairimedaimane">LinkedIn</a></li>
+            <li class="divider"></li>
+            <li><a class="orange-text" href="https://twitter.com/med_aimane">Twitter</a></li>
+          </ul>
+  
+          <!-- Sidenav Structure -->
+          <ul id="nav-mobile" class="sidenav">
+            <li>
+              <a href="#">Social media</a>
+              <div>
+                <ul>
+                    <li><a class="orange-text" href="https://www.linkedin.com/in/skhairimedaimane">LinkedIn</a></li>
+                    <li class="divider"></li>
+                    <li><a class="orange-text" href="https://twitter.com/med_aimane">Twitter</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <main>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br>
+        <h2 class="header center orange-text">Mohamed Aimane Skhairi</h2>
+        <div class="row center">
+          <h4 class="header col s12 light">Master's degree in computer and decision supprort systems</h4>
+          <h5 class="header col s12 light">freelance software engineer and full stack developer</h5>
+        </div>
+        <div class="row center">
+          <a href="https://github.com/medaimane" id="download-button" class="btn-large waves-effect waves-light orange">View some repositories on github</a>
+        </div>
       </div>
-    </nav>
-  </div>
-
-  <div class="section no-pad-bot" id="index-banner">
+    </div>
+  
+  
     <div class="container">
+      <div class="section">
+  
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Speeds up development</h5>
+  
+              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+            </div>
+          </div>
+  
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">User Experience Focused</h5>
+  
+              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+            </div>
+          </div>
+  
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">Easy to work with us</h5>
+  
+              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+            </div>
+          </div>
+        </div>
+  
+      </div>
       <br><br>
-      <h2 class="header center orange-text">Mohamed Aimane SKHAIRI</h2>
-      <div class="row center">
-        <h5 class="header col s12 light">software engineer</h5>
-      </div>
-      <div class="row center">
-        <a href="https://github.com/medaimane" id="download-button" class="btn-large waves-effect waves-light orange">GitHub</a>
-      </div>
-      <br><br>
-
     </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with us</h5>
-
-            <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div>
+  </main>
 
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l5 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">...</p>
+          <h5 class="white-text">Bio</h5><!--Company-->
+          <p>
+              My name is Mohamed Aimane Skhairi. I am 26 years old and I recently graduated from faculty of sciences and technologies of Tangier
+              with master's degree in computer and decision supprort systems. I design and create beautiful and functional solutions for mobile, web and desktop.
+          </p>
 
 
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Services</h5>
           <ul>
-            <li><a class="white-text" href="#!">Desktop Development</a></li>
-            <li><a class="white-text" href="#!">Web Development</a></li>
             <li><a class="white-text" href="#!">Mobile Development</a></li>
-            <li><a class="white-text" href="#!">Computer Vision</a></li>
+            <li><a class="white-text" href="#!">Web Development</a></li>
+            <li><a class="white-text" href="#!">Desktop Development</a></li>
+            <br>
+            <li><a class="white-text" href="#!">Real Time Communication</a></li>
+            <li><a class="white-text" href="#!">Google API Integration</a></li>
+            <li><a class="white-text" href="#!">Analytics and Data Analysis</a></li>
+            <br>
+            <li><a class="white-text" href="#!">AI and ML Solutions</a></li>
+            <li><a class="white-text" href="#!">Computer Vision Solutions</a></li>
           </ul>
         </div>
         <div class="col l4 s12">
           <h5 class="white-text">Contact Us</h5>
           <ul>
-            <li>
-                <i class="tiny material-icons">phone</i> (+212)678240102
-            </li>
-            <li>
-                <a class="white-text" href="#!">
-                   <i class="tiny material-icons">mail</i> skhairimedaimane@gmail.com
-                </a>
-            </li>
+            <li><i class="tiny material-icons">phone</i> (+212) 678240102</li>
+            <li><a class="white-text" href="#!"><i class="tiny material-icons">mail</i> skhairimedaimane@gmail.com</a></li>
+            <li><i class="tiny material-icons">place</i> Tangier-Tetouan, Morocco, North Africa</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="https://medaimane.github.io/">medaimane</a> &copy; all right reserved 2018
+      Made by <a class="orange-text text-lighten-3" href="https://medaimane.github.io/">Mohamed Aimane Skhairi</a> &copy; all right reserved 2018
       </div>
     </div>
   </footer>
@@ -127,7 +152,7 @@
   <!--  Scripts-->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="assets/js/init.js"></script>
+  <script src="js/init.js"></script>
 
   </body>
 </html>
