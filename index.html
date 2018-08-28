@@ -7,7 +7,7 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Mohamed Aimane SKHAIRI | Software engineer</title>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124724673-1"></script>
   <script>
@@ -17,7 +17,7 @@
 
     gtag('config', 'UA-124724673-1');
   </script>
-
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
+  
   <header>
     <div class="navbar-fixed">
       <nav class="light-blue lighten-1" role="navigation">
@@ -41,21 +41,8 @@
             <li class="divider"></li>
             <li><a class="orange-text" target="_blank" href="https://twitter.com/med_aimane">twitter</a></li>
           </ul>
-  
-          <!-- Sidenav Structure -->
-          <ul id="nav-mobile" class="sidenav">
-            <li>
-              <a href="#">Social media</a>
-              <div>
-                <ul>
-                    <li><a class="orange-text" target="_blank" href="https://www.linkedin.com/in/skhairimedaimane">linkedIn</a></li>
-                    <li class="divider"></li>
-                    <li><a class="orange-text" target="_blank" href="https://twitter.com/med_aimane">twitter</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav>
     </div>
@@ -86,8 +73,7 @@
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
               <h5 class="center">Speeds up development</h5>
-  
-              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+              <p class="light"></p>
             </div>
           </div>
   
@@ -95,8 +81,7 @@
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
               <h5 class="center">User Experience Focused</h5>
-  
-              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+              <p class="light"></p>
             </div>
           </div>
   
@@ -104,8 +89,7 @@
             <div class="icon-block">
               <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
               <h5 class="center">Easy to work with us</h5>
-  
-              <!-- <p class="light">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p> -->
+              <p class="light"></p>
             </div>
           </div>
         </div>
@@ -121,8 +105,11 @@
         <div class="col l5 s12">
           <h5 class="white-text">Bio</h5><!--Company-->
           <p>
-              My name is Mohamed Aimane Skhairi. I am 26 years old and I recently graduated from faculty of sciences and technologies of Tangier
-              with master's degree in computer and decision support systems. I design and create beautiful and functional solutions for mobile, web and desktop.
+            My name is Mohamed Aimane Skhairi. I am 26 years old and I recently graduated from faculty of sciences and technologies of Tangier
+            with master's degree in computer and decision support systems.
+          </p>
+          <p>
+            I design and create beautiful and functional solutions for mobile, web and desktop.
           </p>
 
 
@@ -146,7 +133,7 @@
           <h5 class="white-text">Contact Us</h5>
           <ul>
             <li><i class="tiny material-icons">phone</i> (+212) 678240102</li>
-            <li><a class="white-text" href="#!"><i class="tiny material-icons">mail</i> skhairimedaimane@gmail.com</a></li>
+            <li><a class="white-text" href="mailto:skhairimedaimane@gmail.com"><i class="tiny material-icons">mail</i> skhairimedaimane@gmail.com</a></li>
             <li><i class="tiny material-icons">place</i> Tangier-Tetouan, Morocco, North Africa</li>
           </ul>
         </div>
@@ -154,11 +141,28 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="https://medaimane.github.io/">Mohamed Aimane Skhairi</a> &copy; all right reserved 2018
+      Made by <a class="orange-text text-lighten-3" href="#">Mohamed Aimane Skhairi</a> &copy; all right reserved 2018
       </div>
     </div>
   </footer>
 
+  <!-- Sidenav Structure -->
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="assets/img/office.jpg">
+      </div>
+      <!-- <a href="#user"><img class="circle" width="40" src=""></a> -->
+      <a href="#name"><span class="white-text name">Mohamed Aimane Skhairi</span></a>
+      <a href="mailto:skhairimedaimane@gmail.com"><span class="white-text email">skhairimedaimane@gmail.com</span></a>
+    </div></li>
+    <!-- <li><a href="#!"><i class="material-icons">cloud</i>Link</a></li> -->
+    <!-- <li><a href="#!">Second Link</a></li> -->
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Social media</a></li>
+    <li><a class="waves-effect" target="_blank" href="https://www.linkedin.com/in/skhairimedaimane">linkedIn</a></li>
+    <li><a class="waves-effect" target="_blank" href="https://twitter.com/med_aimane">twitter</a></li>
+  </ul>
 
   <!--  Scripts-->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
