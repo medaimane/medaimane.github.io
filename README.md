@@ -4,7 +4,7 @@ This is project for my personal page, please visit it and contact me if you've a
 
 [medaimane.github.io](https://medaimane.github.io)
 
-* The _Strata template_ designed by [HTML5 UP](https://html5up.net/)
+* Design by [HTML5 UP](https://html5up.net/)
 
 ## Creators
 
@@ -13,4 +13,4 @@ This is project for my personal page, please visit it and contact me if you've a
 
 ## License
 
-This project are licensed under the Creative [Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
+This project are licensed under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).
