@@ -1,0 +1,13 @@
+{
+    "name": "Mohamed Aimane Skhairi",
+    "short_name": "MAS",
+    "description": "Description: , Creator: Mohamed Aimane Skhairi, Designer: HTML5 UP, Category: Personal, Length: 1 page",
+    "start_url": "/?homescreen=1",
+    "background_color": "#000000",
+    "theme_color": "#0f4a73",
+    "icons": [{
+        "src": "./assets/images/icons-48.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }]
+}

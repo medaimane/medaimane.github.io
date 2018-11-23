@@ -72,7 +72,7 @@ self.addEventListener('fetch', (event) => {
  * Update a service worker
  */
 self.addEventListener('activate', (event) => {
-  let cacheWhitelist = ['my-site-cache-v1', 'my-site-cache-v2'];
+  let cacheWhitelist = ['my-site-cache-v1'];
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
