@@ -21,9 +21,9 @@ var urlsToCache = [
   '/js/index.js',
 ];
 
-self.addEventListener('install', async event => {
+self.addEventListener('install', event => {
   // Perform install steps
-  event.waitUntil(() => {
+  event.waitUntil(async () => {
     const cache = await caches.open(CACHE_NAME);
     console.log('Opened cache');
     return cache.addAll(urlsToCache);
@@ -31,8 +31,8 @@ self.addEventListener('install', async event => {
 });
 
 
-self.addEventListener('fetch', async event => {
-  event.respondWith(() => {
+self.addEventListener('fetch', event => {
+  event.respondWith( async () => {
     const response = await caches.match(event.request);
 
     // Cache hit - return response
@@ -59,8 +59,8 @@ self.addEventListener('fetch', async event => {
     // to clone it so we have two streams.
     var responseToCache = response.clone();
 
-    const cache = caches.open(CACHE_NAME);
-    
+    const cache = await caches.open(CACHE_NAME);
+
     cache.put(event.request, responseToCache);
 
     return response;
