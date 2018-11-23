@@ -46,7 +46,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         }
 
-        var fetchRequest = event.request.clone();
+        let fetchRequest = event.request.clone();
 
         return fetch(fetchRequest).then(
           (response) => { 
@@ -54,7 +54,7 @@ self.addEventListener('fetch', (event) => {
               return response;
             }
 
-            var responseToCache = response.clone();
+            let responseToCache = response.clone();
 
             caches.open(CACHE_NAME)
               .then((cache) => {
@@ -66,4 +66,22 @@ self.addEventListener('fetch', (event) => {
         );
       })
     );
+});
+
+/**
+ * Update a service worker
+ */
+self.addEventListener('activate', (event) => {
+  let cacheWhitelist = ['my-site-cache-v1', 'my-site-cache-v2'];
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cacheName)  => {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
 });
