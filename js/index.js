@@ -1,22 +1,22 @@
-window.onload = function (event) {
+window.onload =  event => {
     document.body.classList.remove("is-preload");
 };
-window.ontouchmove = function (event) {
+window.ontouchmove = event => {
     return false;
 };
-window.onorientationchange = function (event) {
+window.onorientationchange = event => {
     e.defaultPrevented()
     document.body.scrollTop = 0;
 };
 
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js').then(function (registration) {
+    window.addEventListener('load', async () => {
+        navigator.serviceWorker.register('/sw.js').then((registration) => {
             // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
+            console.log('ServiceWorker registration successful with scope :)', registration.scope);
+        }, err => {
             // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
+            console.log('ServiceWorker registration failed :(', err);
         });
     });
 }
