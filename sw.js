@@ -1,58 +1,69 @@
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
-  'https://medaimane.github.io/',
-  'https://medaimane.github.io/favicon.ico',
-  'https://medaimane.github.io/assets/css/images/ie/footer.png',
-  'https://medaimane.github.io/assets/css/images/ie/footer.svg',
-  'https://medaimane.github.io/assets/css/images/bg.jpg',
-  'https://medaimane.github.io/assets/css/images/overlay-pattern.png',
-  'https://medaimane.github.io/assets/css/images/overlay.svg',
-  'https://medaimane.github.io/assets/css/font-awesome.min.css',
-  'https://medaimane.github.io/assets/css/main.css',
-  'https://medaimane.github.io/assets/css/noscript.css',
-  'https://medaimane.github.io/assets/fonts/FontAwesome.otf',
-  'https://medaimane.github.io/assets/fonts/fontawesome-webfont.eot',
-  'https://medaimane.github.io/assets/fonts/fontawesome-webfont.svg',
-  'https://medaimane.github.io/assets/fonts/fontawesome-webfont.ttf',
-  'https://medaimane.github.io/assets/fonts/fontawesome-webfont.woff',
-  'https://medaimane.github.io/assets/fonts/fontawesome-webfont.woff2',
-  'https://medaimane.github.io/assets/images/icons8-source-code-48.ico',
-  'https://medaimane.github.io/assets/images/icons8-source-code-48.png',
-  'https://medaimane.github.io/js/index.js',
+const CACHE_NAME = 'my-site-cache-v1';
+
+const urlsToCache = [
+  '/',
+  '/favicon.ico',
+  '/assets/css/images/ie/footer.png',
+  '/assets/css/images/ie/footer.svg',
+  '/assets/css/images/bg.jpg',
+  '/assets/css/images/overlay-pattern.png',
+  '/assets/css/images/overlay.svg',
+  '/assets/css/font-awesome.min.css',
+  '/assets/css/main.css',
+  '/assets/css/noscript.css',
+  '/assets/fonts/FontAwesome.otf',
+  '/assets/fonts/fontawesome-webfont.eot',
+  '/assets/fonts/fontawesome-webfont.svg',
+  '/assets/fonts/fontawesome-webfont.ttf',
+  '/assets/fonts/fontawesome-webfont.woff',
+  '/assets/fonts/fontawesome-webfont.woff2',
+  '/assets/images/icons8-source-code-48.ico',
+  '/assets/images/icons8-source-code-48.png',
+  '/js/index.js',
 ];
 
-self.addEventListener('install', event => {
-  // Perform install steps
-  event.waitUntil(async () => {
-    const cache = await caches.open(CACHE_NAME);
-    console.log('Opened cache');
-    return cache.addAll(urlsToCache);
-  });
+/**
+ * Install a service worker
+ */
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+         console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
 });
 
+/**
+ * Cache and return requests
+ */
+self.addEventListener('fetch', (event) => {
+   event.respondWith(
+    caches.match(event.request)
+      .then((response) => { 
+        if (response) {
+          return response;
+        }
 
-self.addEventListener('fetch', event => {
-  event.respondWith( async () => {
-    let response = await caches.match(event.request);
+        var fetchRequest = event.request.clone();
 
-    if (response) {
-      return response;
-    }
+        return fetch(fetchRequest).then(
+          (response) => { 
+            if(!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
+            }
 
-    const fetchRequest = event.request.clone();
+            var responseToCache = response.clone();
 
-    response = await fetch(fetchRequest);
+            caches.open(CACHE_NAME)
+              .then((cache) => {
+                cache.put(event.request, responseToCache);
+              });
 
-    if (!response || response.status !== 200 || response.type !== 'basic') {
-      return response;
-    }
-
-    const responseToCache = response.clone();
-
-    const cache = await caches.open(CACHE_NAME);
-
-    cache.put(event.request, responseToCache);
-
-    return response;
-  });
+            return response;
+          }
+        );
+      })
+    );
 });
