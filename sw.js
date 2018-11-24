@@ -18,6 +18,9 @@ const urlsToCache = [
   '/assets/fonts/fontawesome-webfont.ttf',
   '/assets/fonts/fontawesome-webfont.woff',
   '/assets/fonts/fontawesome-webfont.woff2',
+  '/assets/images/code/icons8-source-code-48.png',
+  '/assets/images/code/icons8-source-code-64.png',
+  '/assets/images/code/icons8-source-code-96.png',
   '/js/index.js',
 ];
 

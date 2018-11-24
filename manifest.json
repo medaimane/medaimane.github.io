@@ -4,7 +4,7 @@
     "description": "Description: Personal app where I can present myself online, Creator: Mohamed Aimane Skhairi, Designer: HTML5 UP, Category: Personal",
     "start_url": "/?homescreen=1",
     "background_color": "#208fd8",
-    "theme_color": "#eff2f4",
+    "theme_color": "#512da8",
     "icons": [{
         "src": "/assets/images/code/icons8-source-code-96.png",
         "sizes": "96x96",
