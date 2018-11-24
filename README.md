@@ -11,7 +11,7 @@ We cover on this repo :
 * Github page hosting for user.
 * Audits testing (Performance, PWA, Accessibilty, Best practices, SEO)
 
-<img alt="demo1" src="/screenshots/Audits-100%.png" width="400" height="600" />
+<img alt="audits-test-result" src="/screenshots/Audits-100%.png" width="400" height="600" />
 
 ## Creators
 
