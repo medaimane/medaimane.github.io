@@ -2,14 +2,14 @@
 
 This is a personal progressive web application (PWA) where I can present myself online. [medaimane.github.io](https://medaimane.github.io).
 
-We cover on this repo :
+Technically, we cover on this repo :
 
 * HTML5 Template integration.
 * Responsive UI.
 * Service worker and Caching.
 * Manifest configuration for mobile.
 * Github page hosting for user.
-* Audits testing (Performance, PWA, Accessibilty, Best practices, SEO)
+* Audits testing (performance, pwa, accessibilty, best practices and SEO)
 
 ![audits-test-result](https://github.com/medaimane/medaimane.github.io/blob/master/screenshots/Audits-100%25.png)
 
@@ -18,7 +18,7 @@ We cover on this repo :
     Mohamed Aimane Skhairi
     skhairimedaimane@gmail.com
 
-    * Design by [HTML5 UP](https://html5up.net/)
+* Design by [HTML5 UP](https://html5up.net/)
 
 ## License
 
