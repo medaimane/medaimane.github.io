@@ -3,6 +3,7 @@ const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
   '/',
   '/favicon.ico',
+  'manifest.json',
   '/assets/css/images/ie/footer.png',
   '/assets/css/images/ie/footer.svg',
   '/assets/css/images/bg.jpg',
