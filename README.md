@@ -11,7 +11,7 @@ We cover on this repo :
 * Github page hosting for user.
 * Audits testing (Performance, PWA, Accessibilty, Best practices, SEO)
 
-![audits-test-result](https://medaimane.github.io/screenshots/Audits-100%.png)
+![audits-test-result](/screenshots/Audits-100%.png)
 
 ## Creators
 
