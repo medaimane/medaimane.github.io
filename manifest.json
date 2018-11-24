@@ -2,7 +2,7 @@
     "name": "Mohamed Aimane S.",
     "short_name": "MAS",
     "description": "Description: Personal app where I can present myself online, Creator: Mohamed Aimane Skhairi, Designer: HTML5 UP, Category: Personal",
-    "start_url": "/?screen=home",
+    "start_url": "/?utm_source=homescreen",
     "scope": "/",
     "display": "fullscreen",
     "background_color": "#208fd8",
