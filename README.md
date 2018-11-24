@@ -1,15 +1,24 @@
 # Personal Page
 
-This is project for my personal page, please visit it and contact me if you've any feedbacks.
+This is a personal progressive web application (PWA) where I can present myself online. [medaimane.github.io](https://medaimane.github.io).
 
-[medaimane.github.io](https://medaimane.github.io)
+We cover on this repo :
 
-* Design by [HTML5 UP](https://html5up.net/)
+* HTML5 Template integration.
+* Responsive UI.
+* Service worker and Caching.
+* Manifest configuration for mobile.
+* Github page hosting for user.
+* Audits testing (Performance, PWA, Accessibilty, Best practices, SEO)
+
+![audits-test-result](https://medaimane.github.io/screenshots/Audits-100%.png)
 
 ## Creators
 
     Mohamed Aimane Skhairi
     skhairimedaimane@gmail.com
+
+    * Design by [HTML5 UP](https://html5up.net/)
 
 ## License
 
