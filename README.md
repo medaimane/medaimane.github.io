@@ -18,7 +18,13 @@ Also we cover on this repository :
     Mohamed Aimane Skhairi
     skhairimedaimane@gmail.com
 
-* Design by [HTML5 UP](https://html5up.net/)
+## Credits
+
+    Design : 
+        HTML5 UP (html5up.net)
+
+	Icons:
+		Font Awesome (fontawesome.io)
 
 ## License
 
