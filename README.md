@@ -1,6 +1,6 @@
 # Personal Website
 
-This is my personal website where I can present myself online. Finally i've been convert it to a progressive web application PWA. Here is the link to visit it [medaimane.github.io](https://medaimane.github.io).
+This is my personal website where I can present myself online. Finally, i have been converting it to a progressive web application PWA. Here is the link to visit it [medaimane.github.io](https://medaimane.github.io).
 
 Also we cover on this repository :
 
