@@ -1,17 +1,24 @@
 # Personal Website
 
-This is my personal website where I can present myself online. Finally, i have been converting it to a progressive web application PWA. Here is the link to visit it [medaimane.github.io](https://medaimane.github.io).
+Hi 👋 This is my personal website [medaimane.github.io](https://medaimane.github.io), where I can present myself online and where you can find links to my social media. 
 
-Also we cover on this repository :
+## Features 🚀
 
-* HTML5 Template integration.
-* Responsive UI.
-* Service worker and Caching.
-* Manifest configuration for mobile.
-* Github page hosting for account.
-* Audits testing (Performance, PWA, Accessibilty, Best practices, SEO), and this is the result :
+- PWA implementation.
+- Github Deployment.
+- HTML5-UP Template integration.
+- Responsive design
+- SEO
+- Google Analytics
+- Google Lighthouse audits high score, and this is a screenshot of a result :
 
 ![audits-test-result](https://github.com/medaimane/medaimane.github.io/blob/master/screenshots/Audits-100%25.png)
+
+## Languages
+
+- HTML
+- CSS (SASS)
+- Javascript
 
 ## Creators
 
@@ -23,8 +30,8 @@ Also we cover on this repository :
     Design : 
         HTML5 UP (html5up.net)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+    Icons:
+        Font Awesome (fontawesome.io)
 
 ## License
 
