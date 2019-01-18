@@ -1,0 +1,26 @@
+{
+  "name": "medaimane.github.io",
+  "version": "1.1.0",
+  "description": "Personal web app",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medaimane/medaimane.github.io.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML5",
+    "CSS",
+    "PWA",
+    "SCSS"
+  ],
+  "author": "Mohamed Aimane Skhairi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medaimane/medaimane.github.io/issues"
+  },
+  "homepage": "https://github.com/medaimane/medaimane.github.io#readme"
+}
