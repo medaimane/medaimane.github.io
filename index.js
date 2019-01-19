@@ -1,4 +1,4 @@
-window.onload =  event => {
+window.onload = event => {
     document.body.classList.remove("is-preload");
 };
 window.ontouchmove = event => {
