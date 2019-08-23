@@ -12,9 +12,7 @@ Hi 👋 This is my personal website [medaimane.github.io](https://medaimane.gith
 - Responsive design
 - SEO
 - Google Analytics
-- Google Lighthouse audits high score, and this is a screenshot of a result :
-
-![audits-test-result](https://github.com/medaimane/medaimane.github.io/blob/master/screenshots/Audits-100%25.png)
+- Google Lighthouse audits high score 💯 
 
 ## Languages
 
