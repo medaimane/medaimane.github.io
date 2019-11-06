@@ -23,7 +23,7 @@ const urlsToCache = [
   '/assets/images/code/icons8-source-code-96.png',
   '/assets/images/code/icons8-source-code-192.png',
   '/assets/images/code/icons8-source-code-512.png',
-  '/index.js',
+  '/src/app/index.js',
 ];
 
 /**
