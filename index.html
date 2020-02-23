@@ -1,86 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0"/>
-  <meta name="Description" content="Creators: Mohamed Aimane Skhairi <skhairimedaimane@gmail.com>, Designer: HTML5 UP, Category: Personal, Length: 1 page">
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5.0"
+    />
+    <meta
+      name="Description"
+      content="Creators: Mohamed Aimane Skhairi <skhairimedaimane@gmail.com>, Designer: HTML5 UP, Category: Personal, Length: 1 page"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
 
-  <!-- PWA mobile config -->
-  <meta name="theme-color" content="#512da8" />
-  <link rel="manifest" href="./manifest.json"/>
+    <!-- PWA mobile config -->
+    <meta name="theme-color" content="#512da8" />
+    <link rel="manifest" href="./manifest.json" />
 
-  <title>Mohamed Aimane Skhairi</title>
+    <title>Mohamed Aimane Skhairi</title>
 
-  <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124724673-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-124724673-1");
-  </script>
-  <!--/Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-124724673-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-124724673-1');
+    </script>
+    <!--/Global site tag (gtag.js) - Google Analytics -->
 
-  <noscript>
-    <link rel="stylesheet" href="./assets/css/noscript.css" />
-  </noscript>
-</head>
+    <noscript>
+      <link rel="stylesheet" href="./assets/css/noscript.css" />
+    </noscript>
+  </head>
 
-<body class="is-preload">
-  <div id="wrapper">
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    <div id="main">
-      
-      <header id="header">
-        <h1>Mohamed Aimane Skhairi (Fully updated version coming soon 😃)</h1>
-        <p>
-          Mobile and Frontend Software engineer | Current stack React, ReactNative, JavaScript, TypeScript and Flutter.
-        </p>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://github.com/medaimane" aria-label="Github" class="icon fa-github" target="_blank" rel="noopener noreferrer">
-                <span class="label">Github</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/skhairimedaimane" aria-label="LinkedIn" class="icon fa-linkedin" target="_blank" rel="noopener noreferrer">
-                <span class="label">LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/med_aimane" aria-label="Twitter" class="icon fa-twitter" target="_blank" rel="noopener noreferrer">
-                <span class="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/medaimane/" aria-label="Instagram" class="icon fa-instagram" target="_blank" rel="noopener noreferrer">
-                <span class="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:skhairimedaimane@gmail.com" aria-label="Email" class="icon fa-envelope-o" target="_blank" rel="noopener noreferrer">
-                <span class="label">Email</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <body class="is-preload">
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+        <header id="header">
+          <h1>Mohamed Aimane Skhairi (Fully updated version coming soon 😃)</h1>
+          <p>
+            Mobile and Frontend Software engineer | Current stack React,
+            ReactNative, JavaScript, TypeScript and Flutter.
+          </p>
+          <nav id="nav"></nav>
+        </header>
 
-      <footer id="footer">
-        Mohamed Aimane Skhairi
-        <span class="copyright"> ©  2018, Designed by
-          <a href="http://html5up.net" aria-label="html5up" target="_blank" rel="noopener noreferrer">HTML5 UP</a>.</span>
-      </footer>
+        <footer id="footer">
+          Mohamed Aimane Skhairi
+          <span class="copyright">
+            © 2018, Designed by
+            <a
+              href="http://html5up.net"
+              aria-label="html5up"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HTML5 UP</a
+            >.</span
+          >
+        </footer>
+      </div>
     </div>
-  </div>
-  <script src="./src/app/index.js"></script>
-</body>
 
+    <script src="./src/sw.js"></script>
+    <script src="./src/config.js"></script>
+    <script src="./src/app/Items/socialMediaList.js"></script>
+    
+    <script src="./src/index.js"></script>
+  </body>
 </html>
