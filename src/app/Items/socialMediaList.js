@@ -1,5 +1,10 @@
 const socialMediaItems = [
   {
+    title: 'UpWork',
+    url: 'https://www.upwork.com/freelancers/medaimane',
+    icon: 'code'
+  },
+  {
     title: 'Github',
     url: 'https://github.com/medaimane/',
     icon: 'github'
