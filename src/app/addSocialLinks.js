@@ -5,7 +5,7 @@ const socialLinks = [
     icon: 'code',
   },
   {
-    label: 'Github',
+    label: 'GitHub',
     url: 'https://github.com/medaimane/',
     icon: 'github',
   },
@@ -15,7 +15,7 @@ const socialLinks = [
     icon: 'linkedin',
   },
   {
-    label: 'Twitter',
+    label: 'X (Twitter)',
     url: 'https://twitter.com/med_aimane/',
     icon: 'twitter',
   },
@@ -23,6 +23,11 @@ const socialLinks = [
     label: 'Instagram',
     url: 'https://www.instagram.com/medaimane/',
     icon: 'instagram',
+  },
+  {
+    label: 'Dev',
+    url: 'https://www.dev.to/medaimane/',
+    icon: 'laptop',
   },
   {
     label: 'Email',
