@@ -23,69 +23,74 @@ const urlsToCache = [
   '/assets/images/code/icons8-source-code-96.png',
   '/assets/images/code/icons8-source-code-192.png',
   '/assets/images/code/icons8-source-code-512.png',
-  '/src/app/index.js',
+  '/src/index.js',
 ];
 
-/**
- * Install a service worker
- */
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
+async function installServiceWorker(event) {
+  try {
+    const cache = await caches.open(CACHE_NAME);
+    const result = await cache.addAll(urlsToCache);
 
-/**
- * Cache and return requests
- */
-self.addEventListener('fetch', (event) => {
-   event.respondWith(
-    caches.match(event.request)
-      .then((response) => { 
-        if (response) {
-          return response;
+    await event.waitUntil(result);
+  } catch (error) {
+    console.log('Install SW failed: ', error);
+  }
+}
+
+const installListener = (event) => {
+  installServiceWorker(event);
+};
+
+self.addEventListener('install', installListener);
+
+async function cacheAndReturnRequests(event) {
+  try {
+    const cachedResponse = await caches.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
+    const fetchRequest = event.request.clone();
+
+    const response = await fetch(fetchRequest);
+    if (!response || response.status !== 200 || response.type !== 'basic') {
+      return response;
+    }
+
+    const responseToCache = response.clone();
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(event.request, responseToCache);
+
+    await event.respondWith(res);
+  } catch (error) {
+    console.log('Cache requets failed: ', error);
+  }
+}
+
+const fetchListener = (event) => {
+  cacheAndReturnRequests(event);
+};
+self.addEventListener('fetch', fetchListener);
+
+async function updateServiceWorker(event) {
+  try {
+    const cacheWhitelist = ['my-site-cache-v1'];
+    const cacheNames = await caches.keys();
+    const results = await Promise.all(
+      cacheNames.map((cacheName) => {
+        if (cacheWhitelist.indexOf(cacheName) === -1) {
+          return caches.delete(cacheName);
         }
-
-        let fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest).then(
-          (response) => { 
-            if(!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-
-            let responseToCache = response.clone();
-
-            caches.open(CACHE_NAME)
-              .then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
       })
     );
-});
 
-/**
- * Update a service worker
- */
-self.addEventListener('activate', (event) => {
-  let cacheWhitelist = ['my-site-cache-v1'];
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName)  => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
+    await event.waitUntil(results);
+  } catch (error) {
+    console.log('Update SW failed: ', error);
+  }
+}
+
+const activateListener = (event) => {
+  updateServiceWorker(event);
+};
+self.addEventListener('activate', activateListener);
