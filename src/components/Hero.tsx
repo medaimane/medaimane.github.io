@@ -46,6 +46,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-8 py-6 rounded-2xl font-semibold shadow-lg"
+            aria-label="Schedule a one-on-one consultation call with Mohamed Aimane"
           >
             <Calendar className="mr-2 h-5 w-5" />
             Schedule a 1:1 Call
@@ -54,6 +55,7 @@ const Hero = () => {
             size="lg" 
             variant="outline"
             className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base md:text-lg px-8 py-6 rounded-2xl font-semibold transition-all duration-300"
+            aria-label="Learn more about working with Mohamed Aimane on your project"
           >
             <Rocket className="mr-2 h-5 w-5" />
             Work With Me

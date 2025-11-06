@@ -28,7 +28,7 @@ const Footer = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={link.name}
+                  aria-label={`Visit Mohamed's ${link.name} profile`}
                   className="text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   <Icon className="h-5 w-5" />

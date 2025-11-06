@@ -20,6 +20,7 @@ const CTA = () => {
           <Button 
             size="lg" 
             className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl"
+            aria-label="Book a consultation call to discuss your project"
           >
             <Calendar className="mr-2 h-5 w-5" />
             Book a Call
@@ -28,6 +29,7 @@ const CTA = () => {
             size="lg" 
             variant="outline"
             className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-background text-base md:text-lg px-10 py-7 rounded-2xl font-semibold transition-all duration-300"
+            aria-label="Start your project with Mohamed Aimane"
           >
             <MessageSquare className="mr-2 h-5 w-5" />
             Start Your Project
