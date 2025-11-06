@@ -1,14 +1,14 @@
-import { Button } from '@/components/ui/button';
-import { Linkedin, Github, Upload, Twitter, Code, Instagram, MessageCircle } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 
-const socialLinks = [
-  { name: 'LinkedIn', icon: Linkedin, href: '#', color: 'hover:text-[#0077B5]' },
-  { name: 'GitHub', icon: Github, href: '#', color: 'hover:text-foreground' },
-  { name: 'Upwork', icon: Upload, href: '#', color: 'hover:text-[#14A800]' },
-  { name: 'X (Twitter)', icon: Twitter, href: '#', color: 'hover:text-[#1DA1F2]' },
-  { name: 'Dev.to', icon: Code, href: '#', color: 'hover:text-foreground' },
-  { name: 'Instagram', icon: Instagram, href: '#', color: 'hover:text-[#E4405F]' },
-  { name: 'Discord', icon: MessageCircle, href: '#', color: 'hover:text-[#5865F2]' },
+const clients = [
+  { name: 'TechStart Inc.', industry: 'SaaS' },
+  { name: 'HealthSync', industry: 'HealthTech' },
+  { name: 'FinPro Solutions', industry: 'FinTech' },
+  { name: 'EcoCommerce', industry: 'E-commerce' },
+  { name: 'FitLife App', industry: 'Wellness' },
+  { name: 'DataFlow AI', industry: 'AI/ML' },
+  { name: 'SmartHome Labs', industry: 'IoT' },
+  { name: 'CryptoVault', industry: 'Blockchain' },
 ];
 
 const SocialLinks = () => {
@@ -19,23 +19,21 @@ const SocialLinks = () => {
           Trusted by Founders <span className="gradient-text">Worldwide 🌍</span>
         </h2>
         
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {socialLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-              <Button
-                key={link.name}
-                variant="outline"
-                size="lg"
-                className={`glass-card glow-effect rounded-2xl p-4 transition-all duration-300 ${link.color}`}
-                asChild
-              >
-                <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
-                  <Icon className="h-6 w-6" />
-                </a>
-              </Button>
-            );
-          })}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-5xl mx-auto">
+          {clients.map((client) => (
+            <div
+              key={client.name}
+              className="glass-card glow-effect rounded-2xl p-6 transition-all duration-300 hover:scale-105 group"
+            >
+              <div className="flex flex-col items-center text-center space-y-2">
+                <Building2 className="h-8 w-8 text-primary group-hover:text-secondary transition-colors" />
+                <h3 className="font-heading font-semibold text-foreground">
+                  {client.name}
+                </h3>
+                <p className="text-xs text-muted-foreground">{client.industry}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
         <p className="text-muted-foreground text-lg">
