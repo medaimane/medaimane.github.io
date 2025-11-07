@@ -4,32 +4,26 @@ const expertise = [
   {
     icon: Brain,
     title: 'AI-Powered App Development',
-    gradient: 'from-purple-500 to-pink-500',
   },
   {
     icon: Smartphone,
     title: 'React Native + Expo',
-    gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Monitor,
     title: 'Cross-Platform (iOS, Android, Web, Wearables)',
-    gradient: 'from-green-500 to-emerald-500',
   },
   {
     icon: Database,
     title: 'Supabase & Scalable Backends',
-    gradient: 'from-orange-500 to-red-500',
   },
   {
     icon: Palette,
     title: 'UI/UX Systems Design',
-    gradient: 'from-indigo-500 to-purple-500',
   },
   {
     icon: Cloud,
     title: 'Cloudflare & Edge Optimization',
-    gradient: 'from-yellow-500 to-orange-500',
   },
 ];
 
@@ -42,8 +36,8 @@ const Expertise = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
             Specialized in Building <span className="gradient-text">Cross-Platform AI Apps that Scale</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Combining cutting-edge technologies with proven expertise to deliver exceptional results.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Combining cutting-edge technologies with proven expertise to deliver exceptional results
           </p>
         </div>
 
@@ -59,8 +53,8 @@ const Expertise = () => {
               >
                 <div className="flex items-start gap-4">
                   {/* Icon with Gradient Background */}
-                  <div className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow`}>
-                    <Icon className="h-7 w-7 text-white" />
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:from-primary/40 group-hover:to-secondary/40 transition-all">
+                    <Icon className="h-7 w-7 text-primary" />
                   </div>
                   
                   {/* Title */}

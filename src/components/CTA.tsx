@@ -8,11 +8,11 @@ const CTA = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-[120px] animate-glow-pulse" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-          Let's Build Something <span className="gradient-text">Amazing Together 🚀</span>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in">
+          Let's Build Something <span className="gradient-text">Amazing Together</span>
         </h2>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
           Ready to turn your idea into a scalable digital product?
         </p>
 

@@ -42,12 +42,12 @@ const Process = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
             My Proven Strategy — <span className="gradient-text">From Idea to Launch and Beyond</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A clear, transparent process to turn your app vision into a real product users love.
+            A clear, transparent process to turn your app vision into a real product users love
           </p>
         </div>
 
@@ -92,7 +92,9 @@ const Process = () => {
         <div className="text-center">
           <Button
             size="lg"
-            className="glow-effect bg-gradient-to-r from-primary to-secondary text-background hover:opacity-90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl"
+            className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl animate-fade-in"
+            style={{ animationDelay: '600ms' }}
+            aria-label="Start your journey with Mohamed Aimane"
           >
             Let's Start Your Journey →
           </Button>

@@ -3,23 +3,23 @@ import { Star, Briefcase, Globe, Rocket } from 'lucide-react';
 const stats = [
   {
     icon: Star,
-    label: '100% Job Success on Upwork',
-    gradient: 'from-primary to-secondary',
+    value: '100%',
+    label: 'Job Success on Upwork',
   },
   {
     icon: Briefcase,
-    label: '8+ Years of Experience',
-    gradient: 'from-secondary to-primary',
+    value: '8+',
+    label: 'Years of Experience',
   },
   {
     icon: Globe,
-    label: 'Clients from 10+ Countries',
-    gradient: 'from-primary to-purple-400',
+    value: '10+',
+    label: 'Countries Worldwide',
   },
   {
     icon: Rocket,
-    label: '30+ Projects Delivered',
-    gradient: 'from-purple-400 to-primary',
+    value: '30+',
+    label: 'Projects Delivered',
   },
 ];
 
@@ -36,13 +36,16 @@ const Stats = () => {
             return (
               <div
                 key={index}
-                className="glass-card glow-effect rounded-2xl p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-in"
+                className="glass-card glow-effect rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="mb-4 inline-flex p-4 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:from-primary/30 group-hover:to-secondary/30 transition-all duration-300">
                   <Icon className="h-8 w-8 text-primary" />
                 </div>
-                <p className="text-foreground font-semibold text-lg leading-tight">
+                <div className="text-4xl md:text-5xl font-heading font-bold gradient-text mb-2">
+                  {stat.value}
+                </div>
+                <p className="text-muted-foreground font-medium text-base leading-tight">
                   {stat.label}
                 </p>
               </div>

@@ -37,11 +37,11 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Recent Projects & App Showcase 🚀
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4">
+            Recent <span className="gradient-text">Projects & App Showcase</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A selection of cross-platform apps built with React Native, Expo, and cutting-edge technologies
+          <p className="text-muted-foreground text-xl max-w-3xl mx-auto">
+            A selection of cross-platform apps built with React Native, Expo, and cutting-edge AI technologies
           </p>
         </div>
 
