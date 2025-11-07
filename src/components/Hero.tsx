@@ -12,12 +12,23 @@ const Hero = () => {
         {/* Profile Photo */}
         <div className="mb-8 inline-block">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
-            <img
-              src={profilePhoto}
-              alt="Mohamed Aimane"
-              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-background"
-            />
+            {/* Outer Glow Background */}
+            <div className="absolute inset-0 -m-8 rounded-full bg-gradient-radial from-secondary/25 via-secondary/10 to-transparent blur-2xl animate-glow-pulse" />
+            
+            {/* Glass Aura Card */}
+            <div className="relative">
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-secondary via-primary to-accent opacity-60 blur-md group-hover:opacity-80 transition-opacity duration-500" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-secondary to-primary opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
+              
+              {/* Photo Container with Glass Effect */}
+              <div className="relative rounded-full p-1 bg-gradient-to-br from-secondary/20 to-primary/20 backdrop-blur-sm border-2 border-secondary/30">
+                <img
+                  src={profilePhoto}
+                  alt="Mohamed Aimane - Senior Software Engineer specializing in React Native and AI-powered apps"
+                  className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-[0_8px_32px_rgba(0,229,255,0.15)] group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
