@@ -9,14 +9,17 @@ const Hero = () => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] animate-glow-pulse" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center animate-fade-in">
-        {/* Profile Photo */}
+        {/* Profile Photo with Enhanced Glow */}
         <div className="mb-8 inline-block">
           <div className="relative group">
+            {/* Cyan glow background */}
+            <div className="absolute -inset-8 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500 animate-glow-pulse"></div>
+            {/* Gradient border ring */}
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
             <img
               src={profilePhoto}
-              alt="Mohamed Aimane"
-              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-background"
+              alt="Mohamed Aimane - Senior Software Engineer"
+              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-background shadow-2xl group-hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
@@ -31,9 +34,9 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Subheadline */}
+        {/* Value Proposition */}
         <p className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto mb-6 leading-relaxed">
-          I help founders and startups build AI-powered mobile apps that people love — from idea to launch, with speed & clarity.
+          I help founders turn raw ideas into cross-platform AI-powered apps — fast, scalable, and built with care.
         </p>
 
         {/* Supporting line */}
@@ -58,7 +61,7 @@ const Hero = () => {
             aria-label="Learn more about working with Mohamed Aimane on your project"
           >
             <Rocket className="mr-2 h-5 w-5" />
-            Work With Me
+            See My Work
           </Button>
         </div>
 

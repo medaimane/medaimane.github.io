@@ -41,7 +41,7 @@ const Projects = () => {
             Recent <span className="gradient-text">Projects & App Showcase</span>
           </h2>
           <p className="text-muted-foreground text-xl max-w-3xl mx-auto">
-            A selection of cross-platform apps built with React Native, Expo, and cutting-edge AI technologies
+            A glimpse into real apps built with React Native, Expo, and AI — designed to scale across iOS, Android, and Web.
           </p>
         </div>
 

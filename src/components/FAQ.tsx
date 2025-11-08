@@ -34,7 +34,7 @@ const FAQ = () => {
             Questions? <span className="gradient-text">I've Got Answers</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Common questions founders ask before starting a project.
+            Founders usually ask me these before we start 👇
           </p>
         </div>
 

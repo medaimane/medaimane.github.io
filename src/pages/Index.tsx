@@ -7,10 +7,10 @@ import Stats from '@/components/Stats';
 import Projects from '@/components/Projects';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
-import Newsletter from '@/components/Newsletter';
 import FAQ from '@/components/FAQ';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -25,11 +25,11 @@ const Index = () => {
         <Projects />
         <Process />
         <Testimonials />
-        <Newsletter />
         <FAQ />
         <CTA />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

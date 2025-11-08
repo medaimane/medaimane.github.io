@@ -1,36 +1,36 @@
-import { Lightbulb, Map, Palette, Code2, Rocket, TrendingUp } from 'lucide-react';
+import { Lightbulb, Map, Palette, Code2, TestTube, TrendingUp, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const steps = [
   {
     icon: Lightbulb,
     title: 'Idea & Discovery',
-    description: 'Understand your vision, goals, and target users to shape the right product direction.',
+    description: 'Understand your vision, goals, and users. Define success and clarify your app concept.',
   },
   {
     icon: Map,
     title: 'Strategy & Planning',
-    description: 'Define core features, tech stack, and roadmap based on your business priorities.',
+    description: 'Turn insights into a roadmap — define milestones, core features, and success metrics.',
   },
   {
     icon: Palette,
     title: 'Design & Prototype',
-    description: 'Create wireframes, UI, and interactive prototypes to visualize the experience early.',
+    description: 'Create interactive prototypes that validate ideas before writing code. Focus on user experience.',
   },
   {
     icon: Code2,
     title: 'Development',
-    description: 'Build the product using React Native + Expo for cross-platform performance (iOS, Android, Web, and Wearables).',
+    description: 'Build the product using React Native + Expo for iOS, Android, and Wearables — fast, consistent, and future-ready.',
   },
   {
-    icon: Rocket,
+    icon: TestTube,
     title: 'Testing & Launch',
-    description: 'Conduct QA, beta testing, and launch the app smoothly to stores or web.',
+    description: 'Conduct real-device testing, fix bugs, and deploy with confidence to App Store, Play Store, and web.',
   },
   {
     icon: TrendingUp,
     title: 'Growth & Analysis',
-    description: 'Collect user feedback, analyze usage, and refine future updates based on data.',
+    description: 'Collect real-world feedback, track usage analytics, and iterate for product-market fit.',
   },
 ];
 
@@ -38,16 +38,19 @@ const Process = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-[140px]" />
       
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-12 animate-fade-in">
+          <p className="text-primary font-semibold text-sm md:text-base mb-3 tracking-wide uppercase">
+            How We'll Work Together
+          </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
             My Proven Strategy — <span className="gradient-text">From Idea to Launch and Beyond</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A clear, transparent process to turn your app vision into a real product users love
+            A transparent process that turns your vision into a product users love — fast, clear, and scalable.
           </p>
         </div>
 
@@ -61,13 +64,13 @@ const Process = () => {
                 className="glass-card glow-effect rounded-2xl p-8 transition-all duration-500 hover:scale-105 group relative animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* Step Number */}
+                {/* Step Number Badge */}
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-heading font-bold text-background shadow-lg">
                   {index + 1}
                 </div>
 
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                {/* Icon Container */}
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                   <Icon className="h-8 w-8 text-primary group-hover:text-secondary transition-colors" />
                 </div>
 
@@ -79,9 +82,12 @@ const Process = () => {
                   {step.description}
                 </p>
 
-                {/* Connector Line - Hidden on last items */}
+                {/* Connection Line - Desktop Only */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+                  <>
+                    {/* Horizontal connector for adjacent cards in same row */}
+                    <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+                  </>
                 )}
               </div>
             );
@@ -90,13 +96,17 @@ const Process = () => {
 
         {/* CTA */}
         <div className="text-center">
+          <p className="text-lg text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: '600ms' }}>
+            Ready to see your app idea come to life?
+          </p>
           <Button
             size="lg"
-            className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl animate-fade-in"
-            style={{ animationDelay: '600ms' }}
+            className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl animate-fade-in group"
+            style={{ animationDelay: '700ms' }}
             aria-label="Start your journey with Mohamed Aimane"
           >
-            Let's Start Your Journey →
+            Start Your Journey
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>

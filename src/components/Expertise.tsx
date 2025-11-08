@@ -2,28 +2,29 @@ import { Brain, Smartphone, Monitor, Database, Palette, Cloud } from 'lucide-rea
 
 const expertise = [
   {
-    icon: Brain,
-    title: 'AI-Powered App Development',
-  },
-  {
-    icon: Smartphone,
-    title: 'React Native + Expo',
-  },
-  {
     icon: Monitor,
-    title: 'Cross-Platform (iOS, Android, Web, Wearables)',
+    title: 'Cross-Platform Development',
+    description: 'iOS, Android, Web, Wearables',
+  },
+  {
+    icon: Brain,
+    title: 'AI Integrations',
+    description: 'Smart features that scale',
   },
   {
     icon: Database,
-    title: 'Supabase & Scalable Backends',
-  },
-  {
-    icon: Palette,
-    title: 'UI/UX Systems Design',
+    title: 'Real-time Data',
+    description: 'Fast, synchronized experiences',
   },
   {
     icon: Cloud,
-    title: 'Cloudflare & Edge Optimization',
+    title: 'Scalable Backends',
+    description: 'Built for growth',
+  },
+  {
+    icon: Smartphone,
+    title: 'Wearables Support',
+    description: 'Apple Watch & beyond',
   },
 ];
 
@@ -37,33 +38,34 @@ const Expertise = () => {
             Specialized in Building <span className="gradient-text">Cross-Platform AI Apps that Scale</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combining cutting-edge technologies with proven expertise to deliver exceptional results
+            Specialized in building AI-powered apps that work everywhere — mobile, web, and wearables — using React Native, Expo, and modern cloud technologies.
           </p>
         </div>
 
         {/* Expertise Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           {expertise.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className="glass-card rounded-2xl p-6 transition-all duration-300 hover:scale-105 group cursor-pointer animate-fade-in"
+                className="glass-card rounded-2xl p-6 transition-all duration-300 hover:scale-105 group cursor-pointer animate-fade-in text-center relative"
                 style={{ animationDelay: `${index * 75}ms` }}
               >
-                <div className="flex items-start gap-4">
-                  {/* Icon with Gradient Background */}
-                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:from-primary/40 group-hover:to-secondary/40 transition-all">
-                    <Icon className="h-7 w-7 text-primary" />
-                  </div>
-                  
-                  {/* Title */}
-                  <div className="flex-1">
-                    <h3 className="font-heading font-semibold text-lg text-foreground leading-tight group-hover:text-primary transition-colors">
-                      {item.title}
-                    </h3>
-                  </div>
+                {/* Icon with Gradient Background */}
+                <div className="mx-auto mb-4 w-16 h-16 rounded-xl bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:from-primary/40 group-hover:to-secondary/40 group-hover:animate-pulse transition-all">
+                  <Icon className="h-8 w-8 text-primary" />
                 </div>
+                
+                {/* Title */}
+                <h3 className="font-heading font-semibold text-base text-foreground leading-tight group-hover:text-primary transition-colors mb-2">
+                  {item.title}
+                </h3>
+                
+                {/* Description */}
+                <p className="text-sm text-muted-foreground">
+                  {item.description}
+                </p>
 
                 {/* Hover Glow Effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/0 to-secondary/0 group-hover:from-primary/5 group-hover:to-secondary/5 transition-all duration-300 pointer-events-none" />

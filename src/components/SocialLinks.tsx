@@ -15,9 +15,12 @@ const SocialLinks = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-          Trusted by Founders <span className="gradient-text">Worldwide 🌍</span>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 animate-fade-in">
+          Trusted by Founders <span className="gradient-text">Worldwide</span>
         </h2>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
+          Backed by real results and trusted by founders in tech, health, SaaS, and product startups.
+        </p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-5xl mx-auto">
           {clients.map((client) => (
@@ -36,9 +39,6 @@ const SocialLinks = () => {
           ))}
         </div>
 
-        <p className="text-muted-foreground text-lg">
-          ❤️ Grateful you're here — let's build something amazing together
-        </p>
       </div>
     </section>
   );

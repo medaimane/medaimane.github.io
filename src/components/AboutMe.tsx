@@ -34,7 +34,7 @@ const AboutMe = () => {
                 I don't just write code — I partner with you to understand your vision, solve complex problems, and deliver apps that work seamlessly across iOS, Android, Web, and even Wearables.
               </p>
               <p>
-                My approach is simple: clarity, speed, and smart communication. Whether you're launching an AI-powered startup or modernizing an existing product, I bring both technical expertise and strategic thinking to every project.
+                From refining your idea to launching a market-ready product, I guide you every step — with strategy, design, and execution that deliver results.
               </p>
             </div>
           </div>

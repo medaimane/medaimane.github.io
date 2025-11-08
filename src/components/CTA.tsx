@@ -9,34 +9,34 @@ const CTA = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 animate-fade-in">
-          Let's Build Something <span className="gradient-text">Amazing Together</span>
+          Let's Turn Your App Idea into Something <span className="gradient-text">Amazing</span> 🚀
         </h2>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
-          Ready to turn your idea into a scalable digital product?
+          You'll talk directly with me — no sales calls, just clarity and results.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
           <Button 
             size="lg" 
             className="glow-effect bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg px-10 py-7 rounded-2xl font-semibold shadow-xl"
-            aria-label="Book a consultation call to discuss your project"
+            aria-label="Schedule a consultation call to discuss your project"
           >
             <Calendar className="mr-2 h-5 w-5" />
-            Book a Call
+            Schedule a Call
           </Button>
           <Button 
             size="lg" 
             variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-background text-base md:text-lg px-10 py-7 rounded-2xl font-semibold transition-all duration-300"
-            aria-label="Start your project with Mohamed Aimane"
+            className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base md:text-lg px-10 py-7 rounded-2xl font-semibold transition-all duration-300"
+            aria-label="Message Mohamed Aimane about your project"
           >
             <MessageSquare className="mr-2 h-5 w-5" />
-            Start Your Project
+            Message Me
           </Button>
         </div>
 
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '300ms' }}>
           Replies within 24 hours · Available for new projects
         </p>
       </div>

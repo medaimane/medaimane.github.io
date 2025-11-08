@@ -29,7 +29,7 @@ const Testimonials = () => {
           What <span className="gradient-text">Clients Say</span>
         </h2>
         <p className="text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
-          Real feedback from founders and product leaders worldwide
+          Hear from founders who turned ideas into successful launches.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
