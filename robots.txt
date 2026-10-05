@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://medaimane.github.io/sitemap.xml
