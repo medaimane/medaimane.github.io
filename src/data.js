@@ -14,6 +14,7 @@ export const site = {
     { number: "03", title: "AI-enabled products", description: "Useful AI capabilities, integrated with care.", detail: "AI features · Agents · Workflows · Automation" },
     { number: "04", title: "Product foundations", description: "The systems and decisions that help products grow.", detail: "Architecture · APIs · Backend · Real-time · Cloud" },
     { number: "05", title: "Idea to launch", description: "A steady path from early concept to production and beyond.", detail: "MVPs · Production apps · App Store · Google Play" },
+    { number: "06", title: "Technical leadership", description: "Clear technical direction for products and teams.", detail: "Architecture · Modernization · Performance" },
   ],
   principles: [
     { number: "01", title: "Clarity", description: "Turn ambiguous ideas into clear technical direction." },
