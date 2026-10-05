@@ -1,6 +1,7 @@
 export const site = {
   url: "https://medaimane.github.io",
   email: "",
+  contactUrl: "https://www.linkedin.com/in/med-aimane-skhairi/",
   proof: [
     { value: "8+", label: "Years building software" },
     { value: "Top 3%", label: "Upwork talent" },
@@ -28,7 +29,7 @@ export const site = {
   projects: [],
   socials: [
     { name: "LinkedIn", description: "Professional / engineering / product", url: "https://www.linkedin.com/in/med-aimane-skhairi/" },
-    { name: "X", description: "Software / product / ideas", url: "https://x.com/medaimane" },
+    { name: "X", description: "Software / product / ideas", url: "https://x.com/med_aimane" },
     { name: "Instagram", description: "Building / remote life / the journey", url: "https://www.instagram.com/medaimane/" },
     { name: "GitHub", description: "Code / experiments / projects", url: "https://github.com/medaimane" },
     { name: "Upwork", description: "Independent professional profile", url: "https://www.upwork.com/freelancers/~medaimane" },

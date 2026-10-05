@@ -14,7 +14,7 @@ Then open `http://localhost:8000`.
 
 ## Content updates
 
-Edit `src/data.js` to update the proof points, capabilities, principles, engagements, social profiles, email address, or selected projects. Project entries are intentionally empty until verified project details are available. The contact link becomes active when `site.email` is set to a real address.
+Edit `src/data.js` to update the proof points, capabilities, principles, engagements, contact details, social profiles, or selected projects. Project entries are intentionally empty until verified project details are available. The contact CTA currently opens the supplied LinkedIn profile; set `site.email` to use a direct email link instead.
 
 The canonical site URL and social metadata currently target `https://medaimane.github.io`. Update those references in `index.html`, `src/data.js`, `robots.txt`, and `sitemap.xml` if the site moves to a custom domain.
 
@@ -24,4 +24,4 @@ The workflow in `.github/workflows/pages.yml` publishes the repository root to G
 
 ## Visual assets
 
-The hero uses an original CSS illustration rather than a stock or generated portrait. Replace it with an approved portrait by editing the `.hero-art` element in `index.html`; preserve the mobile text-first order and add meaningful alt text. `og-image.svg` and `favicon.svg` are editable, source-native brand assets.
+The hero uses an original CSS illustration rather than a stock or generated portrait. Replace it with an approved portrait by editing the `.hero-art` element in `index.html`; preserve the mobile text-first order and add meaningful alt text. `og-image.svg` and `favicon.svg` are editable, source-native brand assets. Typography uses system fonts, so the page does not wait on a third-party font service.

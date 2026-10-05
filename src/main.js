@@ -1,4 +1,4 @@
-import { site } from "./data.js";
+import { site } from "./data.js?v=3";
 
 const canonicalUrl = `${site.url.replace(/\/$/, "")}/`;
 document.querySelector('link[rel="canonical"]').href = canonicalUrl;
@@ -34,14 +34,13 @@ if (site.projects.length) {
 }
 
 const emailLink = document.querySelector("#email-link");
-const emailNote = document.querySelector("#email-note");
 if (site.email) {
   emailLink.href = `mailto:${site.email}`;
+  emailLink.removeAttribute("target");
+  emailLink.removeAttribute("rel");
+  emailLink.firstChild.textContent = "Email me ";
 } else {
-  emailLink.setAttribute("aria-disabled", "true");
-  emailLink.addEventListener("click", (event) => event.preventDefault());
-  emailNote.hidden = false;
-  emailNote.textContent = "Email contact details will be added soon.";
+  emailLink.href = site.contactUrl || emailLink.href;
 }
 
 document.querySelector("#year").textContent = new Date().getFullYear();
@@ -59,5 +58,13 @@ nav.addEventListener("click", (event) => {
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Open navigation");
     nav.classList.remove("is-open");
+  }
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation");
+    nav.classList.remove("is-open");
+    toggle.focus();
   }
 });
